@@ -1,0 +1,180 @@
+<html>
+<style>
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  background-color: black;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 0px 2rem;
+  border: 1px solid;
+}
+
+.main-heading {
+  font-size: 4rem;
+  margin: 2rem 0rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+/* form section */
+.form-class {
+  margin: 2rem 0px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-field {
+  margin: 1rem 0px 0.6rem;
+}
+
+.field-head {
+  font-size: 2rem;
+}
+
+.input-div {
+  margin-bottom: 1rem;
+}
+
+.field-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.form-control-input {
+  font-size: 1.5rem;
+  padding: 0.4rem 0px;
+  text-indent: 0.5rem;
+  border: none;
+  outline: 1px solid #999;
+  border-radius: 7px;
+  width: 100%;
+  color: #999;
+}
+option {
+  color: #999;
+}
+.radio {
+  outline: none;
+}
+
+.form-control-input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.help-text {
+  font-size: 0.7rem;
+  margin-top: 0.4rem;
+  padding: 0.1rem;
+}
+
+button {
+  font-size: 2rem;
+  margin: 0px auto;
+  display: block;
+  color: wite;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid white;
+  background-color: #023de3;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 1px #0000;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+</style>
+<body>
+<!-- form container -->
+<div class="container">
+  <h1 class="main-heading">Survey Form:</h1>
+  <hr>
+  <!-- form start -->
+  <form class="form-class">
+
+    <!-- Name -->
+    <div class="form-control">
+
+      <div class="heading-field">
+        <h3 class="field-head">Customer Name </h3>
+      </div>
+      <div class="field-inputs">
+        <div class="input-div">
+          <input type="text" class="form-control-input" id="first-name" name="first name" required>
+          <div id="first-name-help" class="help-text">Enter Your First Name</div>
+        </div>
+        <div class="input-div">
+          <input type="text" class="form-control-input" id="last-name" name="last name" required>
+          <div id="last-name-help" class="help-text">Enter last First Name</div>
+        </div>
+      </div>
+    </div>
+    <!-- Name Ends -->
+
+    <!-- Address -->
+    <div class="form-control">
+
+      <div class="heading-field">
+        <h3 class="field-head">Address</h3>
+      </div>
+
+      <div>
+        <div class="input-div">
+          <input type="text" class="form-control-input" id="street-address" name="address" required>
+          <div id="street-address-help" class="help-text">Street Address</div>
+        </div>
+      </div>
+      <div>
+        <div class="input-div">
+          <input type="text" class="form-control-input" id="street-address-2" name="street" required>
+          <div id="street-address-2-help" class="help-text">Street Address Line 2</div>
+        </div>
+      </div>
+
+      <div class="field-inputs">
+        <div class="input-div">
+          <input type="text" class="form-control-input" id="city-name" name="city" required>
+          <div id="city-help" class="help-text">City</div>
+        </div>
+        <div class="input-div">
+          <input type="text" class="form-control-input" id="state-name" name="state" required>
+          <div id="state-name-help" class="help-text">State</div>
+        </div>
+      </div>
+
+      <div class="field-inputs">
+        <div class="input-div">
+          <input type="number" class="form-control-input" id="zip-code" name="zip" required>
+          <div id="zip-code-help" class="help-text">Zip</div>
+        </div>
+       
+          <div id="country-help" class="help-text">Select Country</div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Address ends -->
+
+   
+
+    <button type="submit"> Submit </button>
+
+  </form>
+  <!-- form ends -->
+</div>
+<!-- form container ends -->
